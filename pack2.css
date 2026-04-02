@@ -1,0 +1,281 @@
+/* ========================================
+   FOND & GÉNÉRAL
+======================================= */
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                      url('https://i.pinimg.com/736x/58/81/1c/58811c4100b075b9e60d3685f3d84723.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ========================================
+   NAVBAR
+======================================= */
+.navbar {
+    background: rgba(0,0,0,0.9) !important;
+    backdrop-filter: blur(10px);
+    padding: 1rem 0;
+}
+
+.menu-title {
+    background: linear-gradient(45deg, #ff6b35, #f7931e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 1.8rem;
+}
+
+.menu-nav:hover {
+    color: #ff6b35 !important;
+    transform: scale(1.1);
+}
+
+/* ========================================
+   HERO
+======================================= */
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-overlay {
+    background: rgba(0,0,0,0.4);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-title {
+    background: linear-gradient(45deg, #fff, #ffd700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+}
+
+.hero-subtitle {
+    font-size: 1.4rem;
+    color: rgba(255,255,255,0.9);
+}
+
+.btn-menu-hero {
+    background: linear-gradient(45deg, #ff6b35, #f7931e);
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.btn-menu-hero:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(255,107,53,0.4);
+    color: white !important;
+}
+
+/* ========================================
+   MENU SECTION
+======================================= */
+.menu-section {
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(20px);
+    margin: 0;
+    padding: 80px 0;
+}
+
+.menu-title-big {
+    font-size: 3rem;
+    background: linear-gradient(45deg, #2c3e50, #34495e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 20px;
+}
+
+.menu-divider {
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(45deg, #ff6b35, #f7931e);
+    margin: 0 auto 50px;
+    border-radius: 2px;
+}
+
+.menu-category-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+/* Cartes Menu */
+.menu-card {
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.menu-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+}
+
+.menu-card.featured {
+    border: 2px solid #ff6b35;
+}
+
+.menu-featured-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #ff6b35;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.menu-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.menu-card-header h4 {
+    color: #2c3e50;
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.menu-price {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #ff6b35;
+}
+
+.menu-price.big {
+    font-size: 2rem;
+    color: #e74c3c;
+}
+
+.menu-description {
+    color: #7f8c8d;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.btn-add-cart {
+    width: 100%;
+    background: linear-gradient(45deg, #27ae60, #2ecc71);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-add-cart:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(39,174,96,0.3);
+    color: white !important;
+}
+
+.btn-add-cart.featured {
+    background: linear-gradient(45deg, #ff6b35, #f7931e);
+}
+
+/* Panier */
+.cart-summary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.btn-order {
+    background: #ff6b35;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 50px;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-order:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(255,107,53,0.4);
+}
+
+/* ========================================
+   CONTACT
+======================================= */
+.contact-section {
+    background: rgba(44,62,80,0.9);
+    color: white;
+}
+
+.info-card {
+    background: rgba(255,255,255,0.1);
+    padding: 25px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.info-card:hover {
+    background: rgba(255,255,255,0.2);
+    transform: translateX(10px);
+}
+
+.info-icon {
+    font-size: 2.5rem;
+    color: #ff6b35;
+    margin-right: 20px;
+    width: 60px;
+}
+
+/* ========================================
+   RESPONSIVE
+======================================= */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem !important;
+    }
+    
+    .menu-title-big {
+        font-size: 2rem;
+    }
+    
+    .cart-total {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    body {
+        background-attachment: scroll;
+    }
+}

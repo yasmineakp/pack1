@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COOK_BABI</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="pack2.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold menu-title" href="#accueil">
+                <i class="fas fa-utensils me-2"></i>COOK_BABI
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link menu-nav" href="#accueil">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link menu-nav" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link menu-nav" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero-section">
+        <div class="hero-overlay">
+            <div class="container h-100">
+                <div class="row justify-content-center text-center h-100 align-items-center">
+                    <div class="col-lg-8">
+                        <h1 class="display-3 fw-bold hero-title mb-4">MENU DIGITAL</h1>
+                        <p class="lead hero-subtitle mb-4">Découvrez nos spécialités culinaires</p>
+                        <a href="#menu" class="btn btn-menu-hero">
+                            <i class="fas fa-mouse-pointer me-2"></i>Appeler le serveur après votre choix 
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="menu-title-big">NOTRE CARTE</h2>
+                    <div class="menu-divider"></div>
+                </div>
+            </div>
+
+            <!-- Entrées -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h3 class="menu-category-title">
+                        <i class="fas fa-seedling me-2 text-success"></i>ENTRÉES
+                    </h3>
+                </div>
+                <div class="col-lg-6 col-xl-4 mb-4">
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <h4>Salade César</h4>
+                            <span class="menu-price">4000 FCFA</span>
+                        </div>
+                        <p class="menu-description">Laitue romaine, poulet grillé, parmesan, croûtons, sauce César maison</p>
+                       
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-4 mb-4">
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <h4>Soupe du jour</h4>
+                            <span class="menu-price">3500FCFA</span>
+                        </div>
+                        <p class="menu-description">Velouté de légumes de saison, crème fraîche, herbes fraîches</p>
+                       
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plats -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h3 class="menu-category-title">
+                        <i class="fas fa-drumstick-bite me-2 text-danger"></i>PLATS PRINCIPAUX
+                    </h3>
+                </div>
+                <div class="col-lg-6 col-xl-4 mb-4">
+                    <div class="menu-card featured">
+                        <div class="menu-featured-badge">🍗 Populaire</div>
+                        <div class="menu-card-header">
+                            <h4>Steak Frites Maison</h4>
+                            <span class="menu-price big">10000FCFA</span>
+                        </div>
+                        <p class="menu-description">Entrecôte 200g, frites fraîches, sauce poivre ou béarnaise</p>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-4 mb-4">
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <h4>Poisson du jour</h4>
+                            <span class="menu-price">24€</span>
+                        </div>
+                        <p class="menu-description">Cabillaud sauvage, risotto crémeux, légumes croquants</p>
+                       
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-4 mb-4">
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <h4>Burger Gourmet</h4>
+                            <span class="menu-price">3500FCFA</span>
+                        </div>
+                        <p class="menu-description">Pain artisanal, bœuf 180g, cheddar, oignons caramélisés</p>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desserts -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h3 class="menu-category-title">
+                        <i class="fas fa-ice-cream me-2 text-info"></i>DESSERTS
+                    </h3>
+                </div>
+                <div class="col-lg-6 col-xl-4 mb-4">
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <h4>Tiramisu Maison</h4>
+                            <span class="menu-price">3000 FCFA</span>
+                        </div>
+                        <p class="menu-description">Mascarpone, café, biscuits à la cuillère, cacao</p>
+                       
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-4 mb-4">
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <h4>Crème Brûlée</h4>
+                            <span class="menu-price">3000 FCFA</span>
+                        </div>
+                        <p class="menu-description">Vanille de Madagascar, croquant de caramel</p>
+                       
+                    </div>
+                </div>
+            </div>
+
+           
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="menu-title-big mb-4">Contact & Réservation</h2>
+                    <p class="lead mb-4">📞 01 23 45 67 89 | ✉️ contact@cook_babi.</p>
+                    <div class="row mt-5">
+                        <div class="col-md-6">
+                            <div class="info-card">
+                                <i class="fas fa-clock info-icon"></i>
+                                <div>
+                                    <h5>Horaires</h5>
+                                    <p>Lun-Dim: 12h-14h30 / 19h-22h30</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="info-card">
+                                <i class="fas fa-map-marker-alt info-icon"></i>
+                                <div>
+                                    <h5>Adresse</h5>
+                                    <p>Abatta<br>75001 Abidjan</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
