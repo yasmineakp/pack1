@@ -112,16 +112,20 @@ body {
     color: #2c3e50;
 }
 
-/* Cartes Menu */
+/* ========================================
+   CARTES MENU - VERSION CORRIGÉE ✅
+======================================= */
 .menu-card {
     background: white;
     border-radius: 20px;
-    padding: 25px;
+    padding: 0 25px 25px 25px; /* Padding top à 0 pour l'image */
     box-shadow: 0 15px 35px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
     border: 1px solid rgba(255,255,255,0.2);
+    max-width: 350px; /* Largeur max responsive */
+    margin: 0 auto;
 }
 
 .menu-card:hover {
@@ -133,16 +137,28 @@ body {
     border: 2px solid #ff6b35;
 }
 
+/* ✅ IMAGES PARFAITES */
+.menu-card img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 18px 18px 0 0;
+    margin-bottom: 20px;
+}
+
 .menu-featured-badge {
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 20px;
+    right: 20px;
     background: #ff6b35;
     color: white;
-    padding: 5px 12px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 25px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    z-index: 10;
+    box-shadow: 0 4px 12px rgba(255,107,53,0.4);
 }
 
 .menu-card-header {
@@ -156,6 +172,7 @@ body {
     color: #2c3e50;
     font-size: 1.4rem;
     margin: 0;
+    font-weight: 700;
 }
 
 .menu-price {
@@ -173,6 +190,7 @@ body {
     color: #7f8c8d;
     margin-bottom: 20px;
     font-size: 0.95rem;
+    line-height: 1.5;
 }
 
 .btn-add-cart {
@@ -184,6 +202,7 @@ body {
     border-radius: 10px;
     font-weight: 600;
     transition: all 0.3s ease;
+    font-size: 1rem;
 }
 
 .btn-add-cart:hover {
@@ -259,8 +278,15 @@ body {
 }
 
 /* ========================================
-   RESPONSIVE
+   RESPONSIVE - OPTIMISÉ ✅
 ======================================= */
+@media (max-width: 992px) {
+    .menu-card {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+
 @media (max-width: 768px) {
     .hero-title {
         font-size: 2.5rem !important;
@@ -270,6 +296,14 @@ body {
         font-size: 2rem;
     }
     
+    .menu-card img {
+        height: 180px;
+    }
+    
+    .menu-card {
+        padding: 0 20px 20px 20px;
+    }
+    
     .cart-total {
         flex-direction: column;
         gap: 15px;
@@ -277,5 +311,15 @@ body {
     
     body {
         background-attachment: scroll;
+    }
+}
+
+@media (max-width: 576px) {
+    .menu-card img {
+        height: 160px;
+    }
+    
+    .menu-title-big {
+        font-size: 1.8rem;
     }
 }
